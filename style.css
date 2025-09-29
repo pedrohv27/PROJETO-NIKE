@@ -20,7 +20,7 @@ body::before {
     height: 135%;
     position: absolute;
     top: 0;
-    left: -600px;
+    left: -800px;
     z-index: -1;
     transform: rotate(-70deg);
 }
