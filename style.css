@@ -152,7 +152,7 @@ p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #3276d5; 
+    background: #3276d5;
     transition: 0.4s;
 }
 
@@ -172,3 +172,87 @@ p {
 }
 
 
+@media screen and (max-width: 767px) {
+
+    /* Ajustes para celulares */
+    body {
+        padding: 20px;
+        /* Padding menor para celulares */
+        height: auto;
+    }
+
+    body::before {
+        right: 0;
+        top: -100px;
+        transform: rotate(0deg);
+        /* Torna a tarja mais vertical */
+        height: 50%;
+    }
+
+    body::after {
+        font-size: 150px;
+        opacity: 0.2;
+        /* Reduz a opacidade do "Nike" */
+    }
+
+    .caixa-principal {
+        flex-direction: column;
+        /* Garantir que os itens fiquem em coluna */
+        text-align: center;
+    }
+
+    .caixa-tetxo {
+        max-width: 100%;
+        /* Ocupa a largura total */
+    }
+
+    .caixa-imagem img {
+        width: 300px;
+        /* Imagem ainda menor */
+        transform: rotate(0deg);
+        /* Remove a rotação */
+        margin: 40px auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 12px;
+        width: 100%;
+        /* Ocupa a largura total */
+    }
+
+    .botao-carrinho {
+        font-size: 12px;
+    }
+
+    .botao-carrinho:hover {
+        background-color: #3276d5;
+        font-size: 12.5px;
+    }
+
+    .botao-carrinho:active {
+        background: #2e78e1;
+        font-size: 12px;
+    }
+
+    .caixa-botoes {
+        position: static;
+        /* Remove o posicionamento absoluto */
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .botoes-verde, .botoes-rosa, .botoes-azul {
+        width: 40px;
+        height: 40px;
+    }
+}
