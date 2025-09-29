@@ -182,11 +182,11 @@ p {
     }
 
     body::before {
-        right: 0;
-        top: -100px;
+        left:-300px;
         transform: rotate(0deg);
         /* Torna a tarja mais vertical */
-        height: 50%;
+        height: 40%;
+        width: 200%;
     }
 
     body::after {
@@ -216,21 +216,24 @@ p {
 
     h1 {
         font-size: 40px;
+        margin-bottom:-10px ;
     }
 
     h2 {
         font-size: 20px;
-        margin-bottom: 12px;
+        margin-bottom: -3px;
     }
 
     p {
-        font-size: 12px;
+        margin-top: 9px;
+        font-size: 10px;
         width: 100%;
+        margin-bottom: 10px;
         /* Ocupa a largura total */
     }
 
-    .botao-carrinho {
-        font-size: 12px;
+    .botao-carrinho{
+        font-size: 11px;
     }
 
     .botao-carrinho:hover {
